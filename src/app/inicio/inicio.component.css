@@ -42,3 +42,7 @@ mat-card-actions {
 mat-button {
   text-align: end;
 }
+
+.flex-container {
+  justify-content: space-between;
+}

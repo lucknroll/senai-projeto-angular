@@ -8,21 +8,21 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src=".\assets\img\florian-olivo-Mf23RF8xArY-unsplash.jpg"
+            src=".\assets\img\banner1.jpg"
             class="d-block w-100"
             alt="Jogos de PC"
           />
         </div>
         <div class="carousel-item">
           <img
-            src=".\assets\img\jeshoots-com-eCktzGjC-iU-unsplash.jpg"
+            src=".\assets\img\banner2.jpg"
             class="d-block w-100"
             alt="Jogos de PlayStation"
           />
         </div>
         <div class="carousel-item">
           <img
-            src=".\assets\img\sam-pak-X6QffKLwyoQ-unsplash.jpg"
+            src=".\assets\img\banner3.jpg"
             class="d-block w-100"
             alt="Jogos de Xbox"
           />
@@ -52,60 +52,22 @@
   <h2>Destaques</h2>
 
   <mat-grid-list cols="3">
-    <mat-grid-tile>
+    <mat-grid-tile *ngFor="let produto of produtos">
       <mat-card class="example-card">
         <img
           mat-card-image
-          src=".\assets\img\mika-baumeister-HUyICL8qbEE-unsplash.jpg"
-          alt="Imagem de um brinquedo do Super Mario"
+          src=".\assets\img\{{produto.foto}}"
+          alt=""
         />
         <mat-card-header>
-          <mat-card-title>Colecionáveis</mat-card-title>
+          <mat-card-title>{{produto.produto}}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <p>Miniaturas da turma do Super Mario</p>
+          <p>{{produto.descricao}}</p>
         </mat-card-content>
-        <mat-card-actions>
-          <p>R$ 99,99</p>
+        <mat-card-actions class="flex-container">
+          <p>{{produto.preco | currency: 'BRL'}}</p>
           <span class="example-spacer"></span>
-          <button mat-button>Comprar</button>
-        </mat-card-actions>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="example-card">
-        <img
-          mat-card-image
-          src=".\assets\img\onur-binay-9TgH_ZPmIYM-unsplash.jpg"
-          alt="Imagem de uma pessoa jogando no celular"
-        />
-        <mat-card-header>
-          <mat-card-title>Créditos para seus jogos mobile</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>Freefire e outros</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <p>R$ 49,99</p>
-          <button mat-button>Comprar</button>
-        </mat-card-actions>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="example-card">
-        <img
-          mat-card-image
-          src=".\assets\img\possessed-photography-DDHNI1Y4wm8-unsplash.jpg"
-          alt="Imagem de um Famicom"
-        />
-        <mat-card-header>
-          <mat-card-title>Vintage</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>Antiguidades? Temos!</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <p>R$ 499,99</p>
           <button mat-button>Comprar</button>
         </mat-card-actions>
       </mat-card>

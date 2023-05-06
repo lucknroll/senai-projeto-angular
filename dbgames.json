@@ -1,0 +1,32 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "produto": "Produto 1",
+      "descricao": "Miniaturas da turma do Super Mario",
+      "foto": "game1.jpg",
+      "preco": 99.99
+    },
+    {
+      "id": 2,
+      "produto": "Produto 2",
+      "descricao": "Créditos para seus jogos mobile",
+      "foto": "game2.jpg",
+      "preco": 49.99
+    },
+    {
+      "id": 3,
+      "produto": "Produto 3",
+      "descricao": "Antiguidades? Temos!",
+      "foto": "game3.jpg",
+      "preco": 499.99
+    },
+    {
+      "id": 4,
+      "produto": "Jogo 4",
+      "descricao": "Olá mundo!!!",
+      "foto": "olamundo.jpg",
+      "preco": 299.99
+    }
+  ]
+}
